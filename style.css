@@ -1,15 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+    color: white;
+}
+
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0; 
-    background-color: rgb(41, 30, 30);
-    color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-li {
-    display: inline; 
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(41, 30, 30);
+  padding: 1em; 
 }
 
-a {
-    color: white;
+.nav-unordered-list {
+  display: flex;
+}
+
+li a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  height: 100%;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+
 }
