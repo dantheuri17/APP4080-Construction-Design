@@ -37,3 +37,20 @@ li a:hover {
   background-color: #111;
 
 }
+
+.image-container > img {
+  width: 100%;
+  height: auto; 
+}
+
+.image-container {
+  height: 40px;
+  width: 80%;
+  margin: auto; 
+}
+
+.prev, .next {
+  cursor: pointer;
+  
+}
+
