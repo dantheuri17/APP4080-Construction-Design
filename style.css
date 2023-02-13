@@ -131,10 +131,6 @@ nav > ul li a:hover {
 	text-align: center;
 }
 
-.main-header {
-	margin-top: 1em;
-	margin-bottom: 0.5em;
-}
 
 .services-section {
 	display: flex;
@@ -151,6 +147,12 @@ nav > ul li a:hover {
   height: 60%;
   object-fit: cover;
   margin-bottom: 1em;
+}
+
+.home-main-header {
+  color: #1b8dff;
+  	margin-top: 1em;
+	margin-bottom: 0.5em;
 }
 
 /*------------ ABOUT SECTION ----------*/
