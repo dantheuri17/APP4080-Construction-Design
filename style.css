@@ -1,121 +1,219 @@
 * {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+  box-sizing:border-box
 }
 
-h1 {
-    color: white;
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: black;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+/* ----- Navigation Bar --------*/
+#nav-header {
+	color: white;
+	font-size: 1.2em;
+}
+
+nav > ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  background-color: rgb(41, 30, 30);
-  padding: 1em; 
+	display: flex;
+	justify-content: space-between;
+	background-color: #3A3B3C;
+	padding: 1em;
 }
 
 .nav-unordered-list {
-  display: flex;
+	display: flex;
 }
 
-li a {
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  height: 100%;
-  text-decoration: none;
+nav > ul > li a {
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 }
 
-li a:hover {
-  background-color: rgb(56, 54, 179);
+nav > ul li a:hover {
+	background-color: rgb(56, 54, 179);
 }
 .active {
-  background-color: rgb(56, 54, 179);
-}
-.container {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
+	background-color: rgb(56, 54, 179);
 }
 
-.header {
-  font-size: 36px;
-  font-weight: bold;
-  color: blueviolet;
-  margin-top: 50px;
-  margin-bottom: 50px;
+.image-container > img {
+	width: 100%;
+	object-fit: cover;
 }
+
+/*--------- Home Main Content----------*/
+
+#home-main {
+	text-align: center;
+}
+
+.main-header {
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+}
+
+.services-section {
+	display: flex;
+	margin-top: 3em;
+}
+
+.home-card {
+  width: 35%;
+  margin: 0 1.5em;
+}
+
+.card-image {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  margin-bottom: 1em;
+}
+
+/*------------ ABOUT SECTION ----------*/
+
+.about_us-container {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.about_us-header {
+	font-size: 36px;
+	font-weight: bold;
+	color: blueviolet;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
 .about-section {
-  margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 .about-section h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 25px;
-
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 25px;
 }
 
 .about-section p {
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: justify;
-  margin-bottom: 25px;
+	font-size: 18px;
+	line-height: 1.5;
+	text-align: justify;
+	margin-bottom: 25px;
 }
 
 .team-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .team-member {
-  width: 300px;
-  margin: 25px;
-  text-align: center;
+	width: 300px;
+	margin: 25px;
+	text-align: center;
 }
 
 .team-member img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  margin-bottom: 25px;
-  object-fit: cover;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	margin-bottom: 25px;
+	object-fit: cover;
 }
 
 .team-member h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 25px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 25px;
 }
 
 .team-member p {
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: justify;
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: justify;
 }
-
-/* .image-container > img {
-  width: 100%;
-  height: auto; 
-}
-
-.image-container {
-  height: 40px;
-  width: 80%;
-  margin: auto; 
-} */
-
-/* .prev, .next {
-  cursor: pointer;
-  
-}
- */
