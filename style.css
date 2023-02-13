@@ -114,10 +114,10 @@ nav > ul > li a {
 }
 
 nav > ul li a:hover {
-	background-color: rgb(56, 54, 179);
+	background-color: #1b8dff;
 }
 .active {
-	background-color: rgb(56, 54, 179);
+	background-color: #1b8dff;
 }
 
 .image-container > img {
@@ -166,7 +166,7 @@ nav > ul li a:hover {
 .about_us-header {
 	font-size: 36px;
 	font-weight: bold;
-	color: blueviolet;
+	color: #1b8dff;
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
