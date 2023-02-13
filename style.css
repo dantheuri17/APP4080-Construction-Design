@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 h1 {
@@ -34,11 +35,75 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: rgb(56, 54, 179);
+}
+.active {
+  background-color: rgb(56, 54, 179);
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  font-size: 36px;
+  font-weight: bold;
+  color: blueviolet;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.about-section {
+  margin-bottom: 50px;
+}
+
+.about-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 25px;
 
 }
 
-.image-container > img {
+.about-section p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 25px;
+}
+
+.team-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member {
+  width: 300px;
+  margin: 25px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  object-fit: cover;
+}
+
+.team-member h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.team-member p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* .image-container > img {
   width: 100%;
   height: auto; 
 }
@@ -47,10 +112,10 @@ li a:hover {
   height: 40px;
   width: 80%;
   margin: auto; 
-}
+} */
 
-.prev, .next {
+/* .prev, .next {
   cursor: pointer;
   
 }
-
+ */
