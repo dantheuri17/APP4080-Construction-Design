@@ -132,19 +132,26 @@ nav > ul li a:hover {
 }
 
 .services-section {
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	margin-top: 3em;
+	margin-bottom: 200px; 
 }
 
 .home-card {
-	width: 30%;
-	margin: 0 1.5em;
+	width: 550px;
+	height: auto; 
+	margin: 20px 20px;
+	overflow: hidden;
 }
+
+
 
 .card-image {
 	width: 100%;
-	height: 60%;
+	
 	object-fit: cover;
 	margin-bottom: 1em;
 }
@@ -154,6 +161,63 @@ nav > ul li a:hover {
 	margin-top: 1em;
 	margin-bottom: 0.5em;
 }
+
+/*-------------Services Section-----------*/
+
+/* 
+.our-services-section {
+	background-color: rgb(27, 225, 255);
+} */
+
+.our-services-header {
+	font-size: 4em;
+	margin-bottom: 80px; 
+}
+
+.services-flex-container {
+	display: flex; 
+	justify-content: space-evenly;
+}
+
+.services-image-container {
+	
+	height: 100vh;
+
+}
+
+.services-container {
+	display: flex;
+	flex-direction: column;
+	width: 70%; 
+	gap:20px;
+}
+
+.small-services-container {
+	display: flex;
+	gap: 20px; 
+}
+
+.service-card {
+	border: 2px solid black;
+	width: 100%; 
+	height: 300px; 
+	padding: 10px; 
+}
+
+
+
+.services-image {
+	width: 100%;
+	height: 700px;
+	object-fit: cover;
+}
+
+
+
+
+
+
+
 
 /*------------ ABOUT SECTION ----------*/
 
@@ -242,4 +306,97 @@ nav > ul li a:hover {
 	width: 100%;
 	height: 80%;
 	object-fit: cover;
+}
+
+/*------- Contact Us --------------*/
+.contact-us{
+	background-color: #3A3B3C;
+	padding: 10px;
+	width:100%;
+	color: #fafafa;
+	margin-top: 400px; 
+}
+
+.contact-header {
+	text-align: center;
+	margin-bottom: 20px; 
+}
+
+.form-contact-us{
+	background-color: #3A3B3C;;
+	clear: right;
+	border-radius: 1px;
+	width:100%;
+	font-style: bold;
+	color: #1b8dff;
+}
+
+.contact-information {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+input[type=text]{
+	width: 250px;
+	padding: 12px 20px;
+	margin-bottom: 35px;
+	margin-right: 20px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+  }
+ 
+  input[type=submit] {
+	background-color: #1b8dff;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  .vl {
+	border-left: 1px solid rgb(50, 51, 50);
+	height: 50px;
+  }
+.message{
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none
+}
+.fa-linkedin {
+	
+	color:  #007bb5;
+}
+.fa-twitter {
+	
+	color:  #013d59;
+}
+
+.fa-instagram {
+	
+	color: rgb(163, 42, 208);
+}
+.fa-youtube {
+	
+	color: rgb(250, 25, 25);
+}
+.fa-reddit {
+	color: #ff5700;
+}
+
+.fa {
+	
+	width: 50px;
+	text-decoration: none;
+}
+.icons{
+
+	align-self: center;
 }
