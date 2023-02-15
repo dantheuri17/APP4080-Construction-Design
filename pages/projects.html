@@ -24,11 +24,49 @@
 
   <main>
     <section class="projects-section">
-      <div class="projects-image-container">
-        <img class="projects-images" src="../assets/projects/colosseum.jpg" alt="" />
+      <div class="project-container">
+        <div class="project-image-container">
+          <img class="projects-images" src="../assets/projects/colosseum.jpg" alt="" />
+        </div>
+        <div class="project-text-container">
+          <h2>The Colosseum</h2>
+          <p class="project-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque autem aspernatur, labore
+            dolores a harum
+            quasi, modi odit hic exercitationem mollitia consequatur! Excepturi quasi facilis consequatur rerum
+            exercitationem, voluptatum ullam Hic commodi pariatur eveniet incidunt sit autem deserunt dolores nulla
+            magnam explicabo iure sint
+            consequatur
+            optio earum, aspernatur ea soluta neque perspiciatis officia facilis obcaecati veniam? Expedita itaque et
+            necessitatibus!
+            Consectetur recusandae asperiores repellendus aspernatur praesentium temporibus sed, voluptatem corrupti
+            excepturi quo? Dolor recusandae repudiandae harum. Sed placeat sint itaque error reiciendis non dolore
+            tempora? Labore sapiente quos porro eum.</p>
+          <button onclick="readMore(this)" class="myBtn">Read More</button>
+        </div>
+
+
       </div>
-      <div class="projects-image-container">
-        <img class="projects-images" src="../assets/projects/taj-mahal.jpg" alt="" />
+      <div class="project-container">
+        <div class="project-image-container">
+          <img class="projects-images" src="../assets/projects/taj-mahal.jpg" alt="" />
+        </div>
+        <div class="project-text-container">
+          <h2>The Colosseum</h2>
+          <p class="project-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque autem aspernatur,
+            labore dolores a harum
+            quasi, modi odit hic exercitationem mollitia consequatur! Excepturi quasi facilis consequatur rerum
+            exercitationem, voluptatum ullam <span class="dots">...</span> <span class="more">
+              Hic commodi pariatur eveniet incidunt sit autem deserunt dolores nulla magnam explicabo iure sint
+              consequatur
+              optio earum, aspernatur ea soluta neque perspiciatis officia facilis obcaecati veniam? Expedita itaque et
+              necessitatibus!
+              Consectetur recusandae asperiores repellendus aspernatur praesentium temporibus sed, voluptatem corrupti
+              excepturi quo? Dolor recusandae repudiandae harum. Sed placeat sint itaque error reiciendis non dolore
+              tempora? Labore sapiente quos porro eum!</span></p>
+          <button onclick="readMore(this)" class="myBtn">Read More</button>
+        </div>
+
+
       </div>
       <div class="projects-image-container">
         <img class="projects-images" src="../assets/projects/pyramids.jpg" alt="" />
@@ -41,58 +79,60 @@
       </div>
     </section>
     <section>
-			<footer>
-			<div class="contact-us" >
-				
-					
-				<div style="text-align: center;">
-					<h1 style="text-align: center;">Contact Us</h1>
-					<p style="text-align: center;"> We are always happy to hear from you Please  get in touch !</p>
-					<p>Address: Nairobi kenya ,tomboya str</p>
-					<p>Email: CONSTRUCTIVE@gmail.com</p>
-					<p>Number: +254726839325</p></hr>
+      <footer>
+        <div class="contact-us">
 
-				</div>			
-			
 
-				<div>
-					
-				<div class="form-contact-us">
-					<form >
-						
-							<label for="name">First Name</label>
-							<input type="text"  name="firstname" placeholder="Your name..">
-				
-							<label for="Email">Email</label>
-							<input type="text"  name="Email" placeholder="Your Email..">
-						
-						<label for="name">Phone number</label>
-						<input type="text"  name="phonenumber" placeholder="Your Phone number.."></br>
-					
-						<label for="Message">Message</label>
-						<input type="text" class="Message" name="Message" placeholder="Your Message.." style="width: 90%;"></br>
-						
-					
-					
-						<input type="submit" value="Send" >
-					</form>
-				<div class="icons">
-					<a href="#" class="fa fa-linkedin"></a>
-					<a href="#" class="fa fa-twitter"></a>
-					<a href="#" class="fa fa-reddit"></a>
-					<a href="#" class="fa fa-instagram"></a>
-					<a href="#" class="fa fa-youtube"></a>
-					<br>
-				</div>
+          <div style="text-align: center;">
+            <h1 style="text-align: center;">Contact Us</h1>
+            <p style="text-align: center;"> We are always happy to hear from you Please get in touch !</p>
+            <p>Address: Nairobi kenya ,tomboya str</p>
+            <p>Email: CONSTRUCTIVE@gmail.com</p>
+            <p>Number: +254726839325</p>
+            </hr>
 
-				<div style="text-align: center;">©Group 1. All Rights Reserved</div>
-					
-				</div>
-			</div>
-			
-			</footer>
-		</section>
+          </div>
+
+
+          <div>
+
+            <div class="form-contact-us">
+              <form>
+
+                <label for="name">First Name</label>
+                <input type="text" name="firstname" placeholder="Your name..">
+
+                <label for="Email">Email</label>
+                <input type="text" name="Email" placeholder="Your Email..">
+
+                <label for="name">Phone number</label>
+                <input type="text" name="phonenumber" placeholder="Your Phone number.."></br>
+
+                <label for="Message">Message</label>
+                <input type="text" class="Message" name="Message" placeholder="Your Message.." style="width: 90%;"></br>
+
+
+
+                <input type="submit" value="Send">
+              </form>
+              <div class="icons">
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-reddit"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <br>
+              </div>
+
+              <div style="text-align: center;">©Group 1. All Rights Reserved</div>
+
+            </div>
+          </div>
+
+      </footer>
+    </section>
   </main>
+  <script src="../index.js"></script>
 </body>
 
 </html>
