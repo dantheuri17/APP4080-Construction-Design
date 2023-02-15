@@ -83,6 +83,11 @@
 }
 
 /* ----- Navigation Bar --------*/
+
+.nav-logo {
+	width: 50px;
+}
+
 #nav-header {
 	color: white;
 	font-size: 1.2em;
@@ -174,6 +179,9 @@ nav > ul li a:hover {
 	margin-bottom: 80px; 
 }
 
+.our-services.section {
+	background-color: rgb(27, 141, 255);
+}
 .services-flex-container {
 	display: flex; 
 	justify-content: space-evenly;
