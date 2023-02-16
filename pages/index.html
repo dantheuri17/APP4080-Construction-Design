@@ -10,28 +10,34 @@
 
 <body>
   <nav>
-    <!-- <img class="nav-logo" src="../assets/crane-logo.png" alt=""> -->
+    <div id="extra-div">
+       <div class="logo-div">
+      <img class="nav-logo" src="../assets/crane-logo.png" width="55" height="55">
+    </div>
     <h1 id="nav-header">CONSTRUCTIVE</h1>
+    </div>
+   
+    
     <ul class="nav-unordered-list">
       <li><a href="index.html" class="active">HOME</a></li>
       <li><a href="about_us.html">ABOUT US</a></li>
       <li><a href="projects.html">PROJECTS</a></li>
       <li><a href="services.html">SERVICES</a></li>
-      <li><a href="contact_us.html">CONTACT US</a></li>
+      <li><a href="../contact_form/contact_us.html">CONTACT US</a></li>
     </ul>
   </nav>
   <div class="slideshow-container">
     <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <img src="../assets/home/cat-1.jpeg" style="width: 100%" />
+    <div class="mySlides fade slideShowImages">
+      <img src="../assets/home/cat-1.jpeg" style="width: 100%; height: 650px; object-fit: cover;" />
     </div>
 
     <div class="mySlides fade">
-      <img src="../assets/home/construction-workers-blue-sky.jpg" style="width: 100%" />
+      <img src="../assets/home/construction-workers-blue-sky.jpg" style="width: 100%; height: 650px; object-fit: cover;"/>
     </div>
 
     <div class="mySlides fade">
-      <img src="../assets/home/construction-2.jpeg" style="width: 100%" />
+      <img src="../assets/home/construction-2.jpeg" style="width: 100%; height: 650px; object-fit: cover;" />
     </div>
 
     <!-- Next and previous buttons -->
@@ -60,8 +66,8 @@
         </p>
       </div>
       <div class="home-card">
-        <div class="home-card-image-container"> <img class="card-image" src="../assets/home/woman-construction-worker.jpg"
-            alt="" />
+        <div class="home-card-image-container"> <img class="card-image"
+            src="../assets/home/woman-construction-worker.jpg" alt="" />
         </div>
         <h3>Lorem, ipsum dolor.</h3>
         <p>
@@ -83,65 +89,52 @@
       </div>
 
     </section>
-       
+
 
   </main>
-  <footer>
-    <div class="contact-us">
 
+  <h1 class="services-header">Our Services</h1>
 
-      <div class="contact-header" style="">
-        <h1 style="text-align: center;">Contact Us</h1>
-        <p style="text-align: center;"> We are always happy to hear from you Please get in touch !</p>
-        <p>Address: Nairobi kenya ,tomboya str</p>
-        <p>Email: CONSTRUCTIVE@gmail.com</p>
-        <p>Number: +254726839325</p>
-        </hr>
-
+  <div class="servicesContainer">
+    <div class="card">
+      <div class="imgbox">
+        <img src="../assets/services/excavator.png">
       </div>
-
-
-      <div>
-
-        <div class="form-contact-us">
-          <form>
-            <div class="contact-information">
-              <div><label for="name">First Name</label>
-                <input type="text" name="firstname" placeholder="Your name..">
-              </div>
-
-              <div> <label for="Email">Email</label>
-                <input type="text" name="Email" placeholder="Your Email..">
-              </div>
-
-              <div><label for="name">Phone number</label>
-                <input type="text" name="phonenumber" placeholder="Your Phone number.."></br>
-              </div>
-
-            </div>
-            <div> <label for="Message">Message</label>
-              <input type="text" class="Message" name="Message" placeholder="Your Message.." style="width: 90%;"></br>
-            </div>
-
-
-
-            <input type="submit" value="Send">
-          </form>
-          <div class="icons">
-            <a href="#" class="fa fa-linkedin"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-reddit"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-youtube"></a>
-            <br>
-          </div>
-
-          <div style="text-align: center;">©Group 1. All Rights Reserved</div>
-
-        </div>
+      <div class="content">
+        <h2>Construction</h2>
+        <p>The company provides pipe laying and sewage construction, foundation works, concrete footing, excavation
+          work,
+          erection
+          of walls and columns, back fill, grouting, slabs and roofing, underwater construction and much more.</p>
       </div>
+    </div>
 
-  </footer>
+    <div class="card">
+      <div class="imgbox">
+        <img src="../assets/services/repair.png">
+      </div>
+      <div class="content">
+        <h2>Remedial/repairing</h2>
+        <p>The repairing services mainly include refurbishment, repairs, protection from corrosion or control of
+          corrosion
+          along
+          with the required maintenance services.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="imgbox">
+        <img src="../assets/services/maintenance.png">
+      </div>
+      <div class="content">
+        <h2>Maintenance</h2>
+        <p>Includes painting, carpentry, plumbing, cleaning and restoration, refurbishment, electric works and much
+          more.
+        </p>
+      </div>
+    </div>
+  </div>
+
   <script src="../index.js"></script>
 </body>
 
