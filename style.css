@@ -357,10 +357,14 @@ h2 {
 
 	/*----Hiding Text for the Read More ----*/
 
+.projects-main-header {
+	font-size: 3em;
+}
+
 .myBtn {
 	background-color:rgb(27, 141, 255);
 	color: white; 
-	padding: .6em;
+	padding: 1em 2em;
 	margin-top: 1em; 
 }
 
